@@ -13,10 +13,15 @@
                     <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Journal</a>
+                    <a class="nav-link" href="/posts">Journal</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts/create">New Journal Entry</a>
                 </li>
             </ul>
         </div>
