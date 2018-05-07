@@ -16,4 +16,9 @@ Route::get('/about', 'JournalController@about');
 Route::get('/journal', 'JournalController@journal');
 Route::get('/pricing', 'JournalController@pricing');
 
-Route::resource('posts', 'PostsController');
+Route::resource('posts', 'PostsController')->middleware('auth'); 
+// ->middleware('auth')
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
