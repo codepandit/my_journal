@@ -8,17 +8,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'my Journal') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    {{-- <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css"> --}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
         @include('inc.navbar')
@@ -26,6 +27,7 @@
             @include('inc.messages')
             @yield('content')
         </div>
+        @yield('landingPage')
 
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
