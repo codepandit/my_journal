@@ -13,8 +13,8 @@
 
 <div id="second">
   <div class="conatiner text-center">
-    <h1 class="display-4">Digitize your private diary</h1>
-    <p class="lead">Your private & secure journal — available 24/7 from any device.</p>
+    <h1 class="display-4 my-0">Digitize your private diary</h1>
+    <p class="lead my-0">Your private & secure journal — available 24/7 from any device.</p>
   </div><br>
 
   <div class="container" >
