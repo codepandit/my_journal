@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <p class="float-left">Dashboard</p>  
+                    <p class="float-left my-0">Dashboard</p>  
                     <a href="/posts/create" class="btn btn-primary float-right">New Journal Entry</a>
                 </div>
                 

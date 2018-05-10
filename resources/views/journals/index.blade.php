@@ -11,114 +11,68 @@
     </div>
   </div>
 
-  <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<div id="second">
+  <div class="conatiner text-center">
     <h1 class="display-4">Digitize your private diary</h1>
     <p class="lead">Your private & secure journal — available 24/7 from any device.</p>
-  </div>
+  </div><br>
 
-  <div class="container">
+  <div class="container" >
     <div class="card-deck mb-3 text-center">
+
       <div class="card mb-4 box-shadow">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
+          <h4 class="my-0 font-weight-normal">Keep a journal</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+          <p class="card-title pricing-card-title">Keep a journal of your daily activities, your travel, exercise, diet, or thoughts and prayers.</p>
         </div>
       </div>
+
       <div class="card mb-4 box-shadow">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
+          <h4 class="my-0 font-weight-normal">Online diary</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          <p class="card-title pricing-card-title">Quickly find past journal entries thanks to an intuitive calendar.</p>
         </div>
       </div>
+
       <div class="card mb-4 box-shadow">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
+          <h4 class="my-0 font-weight-normal">Secure, encrypted</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          <p class="card-title pricing-card-title">Using the same security as banks, even we can’t see your private entries!</p>
         </div>
       </div>
+
     </div>
+  </div>
+</div>
 
-
-    {{-- <div class="position-relative overflow-hidden mx-auto bg-light">
-        
-        <h1 class="display-4 font-weight-normal">Contact Us</h1>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        
-    </div> --}}
-
-    {{-- {!! Form::open(['action' => 'PostsController@store']) !!}
+<div id="third">
+  <div class="container">
+    {!! Form::open(['action' => 'JournalController@contact']) !!}
+    <h1 class="display-4 font-weight-normal">Contact Us.</h1>
     <div class="form-group">
-        {{Form::label('title', 'Name')}}
-        {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
+        {{Form::label('name', 'Name')}}
+        {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
     </div>
     <div class="form-group">
         {{Form::label('email', 'Email')}}
         {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Your Email'])}}
     </div>
     <div class="form-group">
-            {{Form::label('body', 'Body')}}
-            {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
+            {{Form::label('body', 'Message')}}
+            {{Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Message'])}}
     </div>
-    <
     {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-    {!! Form::close() !!} --}}
+    {!! Form::close() !!}
+  </div>
+</div>
 
-    {{-- <h1>Create New Journal</h1>
-    {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
-        <div class="form-group">
-            {{Form::label('title', 'Title')}}
-            {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
-        </div>
-        <div class="form-group">
-                {{Form::label('body', 'Body')}}
-                {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
-        </div>
-        <div class="form-group">
-            {{Form::file('image')}} 
-        </div>
-        {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-    {!! Form::close() !!} --}}
-
-
-  <footer class="container text-center">
+  <footer class="foot text-center">
       <p>All Rights reserved &copy My Journal</p>
   </footer>
     

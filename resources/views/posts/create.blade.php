@@ -16,5 +16,9 @@
         </div>
         {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
     {!! Form::close() !!}
+
+    <form action="/file-upload"
+      class="dropzone"
+      id="my-awesome-dropzone"></form>
     
 @endsection

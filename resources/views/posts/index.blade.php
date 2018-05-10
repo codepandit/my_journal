@@ -6,7 +6,7 @@
         <div class="row flex mb-2">
             @foreach($posts as $post)
             @if(Auth::user()->id == $post->user_id)
-                <div class="col-6" >
+                <div class="col-4" >
                     <div class="card flex mb-4" style="width: 100%; text-align: center;">
                     <img class="card-img-top" src="/storage/images/{{$post->image}}" alt="Card image cap">
                         <div class="card-body">

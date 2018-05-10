@@ -169,15 +169,4 @@ class PostsController extends Controller
 
     }
 
-    public function contact() {
-        $this->validate($request,
-        [
-            'title' => 'required',
-            'email' => 'required',
-            'body' => 'required'
-        ]);
-        
-
-        return redirect('/posts')->with('success', 'Journal Created');
-    }
 }

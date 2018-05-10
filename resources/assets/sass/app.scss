@@ -8,11 +8,32 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.card-header{
+  background-color: #007bff;
 }
 
-@font-face {
-  font-family: 'Dosis', sans-serif !important;
+
+.my-0{
+  color: white;
 }
+
+#second {
+  background-color: lightslategray;
+  padding: 30px 0;
+}
+
+#third{
+  background-color: white;
+  padding: 30px 0;
+}
+
+.foot{
+  background-color: lightslategray;
+  padding: 20px;
+}
+
+.foot p{
+  color: white;
+  transform: translateY(35%);
+}
+
