@@ -43,7 +43,7 @@
           <h4 class="my-0 font-weight-normal">Secure, encrypted</h4>
         </div>
         <div class="card-body">
-          <p class="card-title pricing-card-title">Using the same security as banks, even we can’t see your private entries!</p>
+          <p class="card-title pricing-card-title">Your journal will be secure, no one can see your private entries!</p>
         </div>
       </div>
 
