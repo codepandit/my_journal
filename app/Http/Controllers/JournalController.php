@@ -41,6 +41,10 @@ class JournalController extends Controller
         // });
         // dd($request->all());
         // return redirect()->back()->with('success', 'Thanks You for contacting Us');
+
+        // Mail::raw('Test email', function ($message) { 
+        //     $message->to('jon<myaddress>.com')->subject('test');
+        //     });
         
     }
     
