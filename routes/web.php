@@ -12,7 +12,8 @@
 */
 
 Route::get('/', 'JournalController@index');
+Route::post('/welcome', 'JournalController@contact');
 Route::resource('posts', 'PostsController')->middleware('auth'); 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
-Route::post('/welcome', 'JournalController@contact');
+
