@@ -32,7 +32,7 @@
                             </thead>
                             @foreach($posts as $post)
                             <tr>
-                                <th>{{$post->title}}</th>
+                                <th><a href="/posts/{{$post->id}}">{{$post->title}}</th>
                                 <th><a href="/posts/{{$post->id}}/edit" class="btn btn-secondary">Edit</a></th>
                                 <th>
                                     {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
